@@ -1,2 +1,6 @@
 # ALPhA-O-PPAC-Regression
 Evaluates O-PPAC Dataset using Fully Connected Neural Network and Support Vector Regression Models
+
+  This repository contains two files called O-PPAC_FCNN and O-PPAC_SVR. Both, at the moment evaluate an O-PPAC dataset that only contains events from 9 different x,y position but all the y positions are 0. Thus, these two programs assume that you have the O-PPAc data file called "simu_HDF_new.h5", which was provided by Dr. Yassid Ayyad of the Facility for Rare Isotope Beams at Michigan State University. The FCNN program requires you to have the Tensorflow, Sci-Kit Learn, Numpy, H5py and Matplotlib packages installed. The SVR program requires you to have the Sci-Kit Learn, Numpy, H5py and Matplotlib packages installed. 
+  The FCNN program works by running all the sections of code and then allowing the main() function to train an FCNN model using the given dataset, predict, and produce a loss value, Mean Absolute Error, Mean Square Value, Predictions vs True Values graph and a Loss Curve. 
+  The SVR programs works by running all the sections of code and then running the main() function will train an SVR model using the given dataset and make predicitons. This program also outputs the Mean Absolute Value and a Predictions vs True Values graph.
